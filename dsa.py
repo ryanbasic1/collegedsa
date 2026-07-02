@@ -63,11 +63,39 @@ def security(j):
 
 
 
-def distance(li):
-    gap = []
-    for i in range(1,len(li)):
-        gap.append(abs(li[i]-abs(li[i-1])))
-        print(gap)
-    return sum(gap)
+# def distance(li):
+#     gap = []
+#     for i in range(1,len(li)):
+#         gap.append(abs(li[i]-abs(li[i-1])))
+#         print(gap)
+#     return sum(gap)
 
-print(distance([10,11,7,12,14]))
+# print(distance([10,11,7,12,14]))
+
+
+
+class new:
+    def __init__(self):
+        self.a=10
+
+
+obj1 = new()
+obj2 = new()
+obj3 = new()    
+obj1.a = 20
+print(obj1.a,obj2.a,obj3.a)
+
+
+#single level inheritance
+class college:
+    def college_name(self):
+       print("college name is ABC")
+
+class student(college):
+    def student_name(self):
+        print("student name is XYZ")
+        self.college_name()
+
+obj = student()
+obj.college_name()
+obj.student_name()
