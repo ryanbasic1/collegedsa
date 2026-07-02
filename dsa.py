@@ -99,3 +99,21 @@ class student(college):
 obj = student()
 obj.college_name()
 obj.student_name()
+
+
+##multiple level inheritance
+class college:
+    def college_name(self):
+       print("college name is ABC")
+class student(college):
+    def student_name(self):
+        print("student name is XYZ")
+        self.college_name()
+class marks(student):
+    def marks(self):
+        print("marks is 90")
+        self.student_name()
+
+
+obj = marks()
+obj.college_name() 
