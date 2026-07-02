@@ -100,6 +100,8 @@ obj = student()
 obj.college_name()
 obj.student_name()
 
+
+
 #sachin chnages 
 
 
