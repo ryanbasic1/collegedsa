@@ -100,6 +100,17 @@ obj = student()
 obj.college_name()
 obj.student_name()
 
+#sachin chnages 
+
+
+def addthiscode():
+        name = "aryan"
+        name3 = "sachin"
+        print(name,name3)
+        
+addthiscode()
+
+
 
 ##multiple level inheritance
 class college:
